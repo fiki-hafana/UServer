@@ -3,6 +3,14 @@ OS Ubuntu Server 22.04 with Webserver + MultiPHP
 --------------------------------------------------------------------   
 Prepared for web application developer to test their web system. Using this box will help web developer easy to manage and test their web. 
 
+Requirements
+--------------------------------------------------------------------
+- Install [VirtualBox](https://www.virtualbox.org/)
+- Install vagrant using the installation instructions in the [Getting Started document](https://developer.hashicorp.com/vagrant/tutorials/getting-started)
+- Run `vagrant box add fikihafana/UbuntuWebserver22`
+- Run `vagrant box init fikihafana/UbuntuWebserver22`
+- Run `vagrant up` to start your box
+
 Features of this box and WebServer Control Panel
 --------------------------------------------------------------------
 Web domains
@@ -54,11 +62,10 @@ Login Details
 - SSH login : vagrant
 - SSH Pass : vagrant
 - Sudo Pass : not used / blank
-
-- WebPanel Port : 8083
 - admin email : admin@localhost
 - FQDN hostname : host.localhost.com
 
+- WebPanel Port : 8083
 - Web Admin URL:  https://127.0.0.1:8083 (do port forwarding)
 - Username : admin
 - Password : hestiacp
